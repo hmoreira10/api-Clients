@@ -18,6 +18,14 @@ class Company extends Model
     }
     public function subsidiarys()
     {
-        return $this->belongsToMany('App\Models\Company', 'client_company', 'client_id', 'company_id');
+        return $this->hasMany('App\Models\Company');
+    }
+    public function clients()
+    {
+        return $this->belongsToMany('App\Models\Clients', 'client_company', 'client_id', 'company_id');
+    }
+    public function clientsHeadquarter()
+    {
+        return $this->hasMany('App\Models\Cients');
     }
 }
