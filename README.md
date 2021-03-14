@@ -13,8 +13,8 @@ Simple api with the purpose of understanding and applying knowledge about relati
 
 ### Features
 
-- ** 🔁 Laravel (8.x)
-- ** 🐘 Postgresql (12)
+- 🔁    Laravel (8.x)
+- 🐘    Postgresql (12)
 ### Getting started
 
 [Laravel documentation](https://laravel.com/docs/contributions).
