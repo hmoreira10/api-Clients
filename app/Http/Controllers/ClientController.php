@@ -77,4 +77,8 @@ class ClientController extends Controller
         $client->delete();
         return response()->json('Client deleted', 201);
     }
+    public function teste($id, $nome)
+    {
+        echo $id . ' - ' . $nome;
+    }
 }

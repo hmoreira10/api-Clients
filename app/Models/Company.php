@@ -10,7 +10,7 @@ class Company extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['name', 'commercial_name', 'cnpj', 'company_id'];
+    protected $fillable = ['name', 'comercial_name', 'cnpj', 'company_id'];
 
     public function headquarter()
     {
@@ -22,10 +22,10 @@ class Company extends Model
     }
     public function clients()
     {
-        return $this->belongsToMany('App\Models\Clients', 'client_company', 'client_id', 'company_id');
+        return $this->belongsToMany('App\Models\Client', 'client_company', 'company_id', 'client_id');
     }
     public function clientsHeadquarter()
     {
-        return $this->hasMany('App\Models\Cients');
+        return $this->hasMany('App\Models\Client');
     }
 }

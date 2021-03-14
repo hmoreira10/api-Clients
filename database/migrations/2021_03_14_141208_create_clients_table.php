@@ -21,7 +21,7 @@ class CreateClientsTable extends Migration
             $table->string('document_number', 255);
 
             $table->unsignedBigInteger('company_id');
-            $table->foreign('company_id')->references('id')->on('companys');
+            $table->foreign('company_id')->references('id')->on('companies');
         });
     }
 
