@@ -16,7 +16,7 @@ class ClientController extends Controller
      */
     public function index(Company $company)
     {
-        return ($company->company_id) ? $company->clients : $company->clientsHeadquarers;
+        return ($company->company_id) ? $company->clients : $company->clientsHeadquarter;
     }
 
     /**
