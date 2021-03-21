@@ -17,5 +17,8 @@ Simple api with the purpose of understanding and applying knowledge about relati
 - 🐘    Postgresql (12)
 ### Getting started
 
-- `https://github.com/hmoreira10/api-Clients`
+- `git clone https://github.com/hmoreira10/api-Clients.git`
+- `cd api-Clients`
+- `composer install`
+- `php artisan serve`
 
